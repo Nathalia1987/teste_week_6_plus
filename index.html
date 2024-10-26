@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>My Weather Application</title>
+    <title>My weather application</title>
   </head>
   <body>
     <div class="weather-app">
@@ -21,41 +24,36 @@
             class="search-input"
             id="search-input"
           />
-          <button type="submit" class="search-button">Search</button>
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city" id="current-city">City Name</h1>
+            <h1 class="current-city" id="current-city">Paris</h1>
             <p class="current-details">
-              <span id="current-date"></span><br />
-              <span id="weather-description">Clear Sky</span><br />
-              Humidity: <strong id="humidity">87%</strong>, 
-              Wind: <strong id="wind-speed">7.2 km/h</strong>
+              <span id="current-date"></span>, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
             </p>
           </div>
           <div class="current-temperature">
-            <img
-              src=""
-              alt="Weather Icon"
-              id="weather-icon"
-              class="weather-icon"
-            />
-            <span id="current-temperature" class="temperature-value">24</span>
-            <span class="temperature-unit">°C</span>
+            <span class="current-temperature-icon">☀️</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >24</span
+            ><span class="current-temperature-unit">°C</span>
           </div>
         </div>
       </main>
       <footer>
         <p>
           This project was coded by
-          <a href="https://github.com/Nathalia1987" target="_blank">Nathalia Koch</a>
-          and is <a href="https://github.com/Nathalia1987/teste_week_6_plus" target="_blank">on GitHub</a> and
-          <a href="https://nathalia1987testeweek6plus.netlify.app/" target="_blank">hosted on Netlify</a>.
+          <a href="#" target="_blank">Nathalia Koch</a> and is
+          <a href="https://github.com/Nathalia1987/teste_week_6_plus" target="_blank"> on GitHub</a> and
+          <a href="https://nathalia1987testeweek6plus.netlify.app/" target="_blank">hosted on Netlify</a>
         </p>
       </footer>
     </div>
-    <script src="index.js"></script>
   </body>
+  <script src="index.js"></script>
 </html>
+
